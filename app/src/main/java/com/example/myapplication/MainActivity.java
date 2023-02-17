@@ -21,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "Это отладка");
+        Log.e(TAG, "Это ошибка");
+        Log.i(TAG, "Это информация");
+        Log.v(TAG, "Это подробности");
+        Log.w(TAG, "Это предупреждение");
         Context context = getApplicationContext();
         CharSequence text = "One piece is real!";
         int duration = Toast.LENGTH_SHORT;
