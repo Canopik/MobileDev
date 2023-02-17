@@ -21,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Context context = getApplicationContext();
+        CharSequence text = "One piece is real!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         camera = (Button) findViewById(R.id.button);
